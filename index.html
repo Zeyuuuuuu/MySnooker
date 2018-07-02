@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000">
+
+    <!-- import CSS -->
+    <script src="//code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="./lib/matter-dev.js"></script>
+    <script src="./lib/matter-wrap.js"></script>
+    <script type="text/javascript" src="./lib/decomp.js"></script>
+    <script type="text/javascript" src="./lib/pathseg.js"></script>
+    <script src="./lib/matter-tools.gui.js"></script>
+    <script src="./lib/matter-tools.inspector.js"></script>
+    <script src="./lib/matter-tools.demo.js"></script>
+    <script src="server/socket.io.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <title> Snooker2D </title>
+  </head>
+  <body>
+  <audio id = "bg" autoplay="autoplay" loop="loop" preload="preload" src="src/assets/bg.mp3"></audio>
+  <audio id = "hit" preload="preload" src="src/assets/hit.m4a"></audio>
+  <audio id = "hit2" preload="preload" src="src/assets/hit2.m4a"></audio>
+
+  <div id="waiting"></div>
+
+  <div id="app"></div>
+
+    <!-- import Vue before Element -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <style type="text/css">
+      body{
+        background-color:#000;
+      }
+      canvas{
+        margin:0 auto;
+      }
+    </style>
+    <script src="/dist/build.js"></script>
+  </body>
+  <script src="src/Setup2D.js"></script>
+  <script src="server/app.js"></script>
+</html>
